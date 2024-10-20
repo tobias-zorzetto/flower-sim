@@ -1,0 +1,33 @@
+[2024-10-13 19:42:39,590][flwr][DEBUG] - Pre-registering run with id 1011492965339621200
+[2024-10-13 19:42:39,591][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 19:42:39,591][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 19:42:39,591][flwr][DEBUG] - Buffer time delay: 5s
+[2024-10-13 19:42:39,974][flwr][ERROR] - ServerApp thread raised an exception: Unrecognized configuration class <class 'transformers.models.bert.configuration_bert.BertConfig'> for this kind of AutoModel: AutoModelForAudioClassification.
+Model type should be one of ASTConfig, Data2VecAudioConfig, HubertConfig, SEWConfig, SEWDConfig, UniSpeechConfig, UniSpeechSatConfig, Wav2Vec2Config, Wav2Vec2BertConfig, Wav2Vec2ConformerConfig, WavLMConfig, WhisperConfig.
+[2024-10-13 19:42:39,978][flwr][ERROR] - Traceback (most recent call last):
+  File "/Users/tobias/.pyenv/versions/3.10.13/lib/python3.10/site-packages/flwr/simulation/run_simulation.py", line 336, in server_th_with_start_checks
+    run_server_app(
+  File "/Users/tobias/.pyenv/versions/3.10.13/lib/python3.10/site-packages/flwr/server/run_serverapp.py", line 88, in run
+    server_app(driver=driver, context=context)
+  File "/Users/tobias/.pyenv/versions/3.10.13/lib/python3.10/site-packages/flwr/server/server_app.py", line 115, in __call__
+    components = self._server_fn(context)
+  File "/Users/tobias/unicamp/flower-simulation/test-transformers/test_transformers/server_app.py", line 38, in <lambda>
+    return ServerApp(server_fn=lambda context: server_fn(context, config))
+  File "/Users/tobias/unicamp/flower-simulation/test-transformers/test_transformers/server_app.py", line 19, in server_fn
+    net = AutoModelForAudioClassification.from_pretrained(
+  File "/Users/tobias/.pyenv/versions/3.10.13/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 567, in from_pretrained
+    raise ValueError(
+ValueError: Unrecognized configuration class <class 'transformers.models.bert.configuration_bert.BertConfig'> for this kind of AutoModel: AutoModelForAudioClassification.
+Model type should be one of ASTConfig, Data2VecAudioConfig, HubertConfig, SEWConfig, SEWDConfig, UniSpeechConfig, UniSpeechSatConfig, Wav2Vec2Config, Wav2Vec2BertConfig, Wav2Vec2ConformerConfig, WavLMConfig, WhisperConfig.
+
+[2024-10-13 19:42:39,978][flwr][DEBUG] - ServerApp finished running.
+[2024-10-13 19:42:39,978][flwr][DEBUG] - Triggered stop event for Simulation Engine.
+[2024-10-13 19:42:44,594][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 19:42:44,602][flwr][DEBUG] - Registered 10 nodes
+[2024-10-13 19:42:44,603][flwr][DEBUG] - Supported backends: ['ray']
+[2024-10-13 19:42:44,604][flwr][DEBUG] - Initialising: RayBackend
+[2024-10-13 19:42:44,606][flwr][DEBUG] - Backend config: {'client_resources': {'num_cpus': 8}, 'init_args': {'logging_level': 30, 'log_to_driver': True}, 'actor': {'tensorflow': 0}}
+[2024-10-13 19:42:50,849][flwr][DEBUG] - Constructed ActorPool with: 1 actors
+[2024-10-13 19:42:50,849][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 19:42:50,850][flwr][DEBUG] - Terminated 1 actors
+[2024-10-13 19:42:52,368][flwr][DEBUG] - Terminated RayBackend

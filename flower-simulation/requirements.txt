@@ -1,0 +1,7 @@
+flwr>=1.11.1
+flwr_datasets==0.3.0
+hydra-core==1.3.2
+numpy>=2.1.1
+omegaconf==2.3.0
+torch==2.4.1
+torchvision==0.19.1

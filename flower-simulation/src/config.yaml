@@ -1,0 +1,17 @@
+model: prajjwal1/bert-tiny
+
+dataset: stanfordnlp/imdb
+
+backend_config:
+  client_resources:
+    num_cpus: 8
+gpu_backend_config:
+  client_resources: 
+    num_gpus: 1
+
+clients:
+  - cpu_time: 30
+  - cpu_time: 20
+  - cpu_time: 10
+
+partitions: 10

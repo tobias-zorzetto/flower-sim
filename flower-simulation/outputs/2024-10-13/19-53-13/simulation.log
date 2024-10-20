@@ -1,0 +1,29 @@
+[2024-10-13 19:53:13,482][flwr][DEBUG] - Pre-registering run with id 8018298541042136568
+[2024-10-13 19:53:13,483][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 19:53:13,483][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 19:53:13,483][flwr][DEBUG] - Buffer time delay: 5s
+[2024-10-13 19:53:14,113][flwr][INFO] - Starting Flower ServerApp, config: num_rounds=3, no round_timeout
+[2024-10-13 19:53:14,113][flwr][INFO] - 
+[2024-10-13 19:53:14,114][flwr][INFO] - [INIT]
+[2024-10-13 19:53:14,114][flwr][INFO] - Using initial global parameters provided by strategy
+[2024-10-13 19:53:14,114][flwr][INFO] - Starting evaluation of initial global parameters
+[2024-10-13 19:53:14,114][flwr][INFO] - Evaluation returned no results (`None`)
+[2024-10-13 19:53:14,114][flwr][INFO] - 
+[2024-10-13 19:53:14,114][flwr][INFO] - [ROUND 1]
+[2024-10-13 19:53:18,489][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 19:53:18,490][flwr][DEBUG] - Registered 10 nodes
+[2024-10-13 19:53:18,490][flwr][DEBUG] - Supported backends: ['ray']
+[2024-10-13 19:53:18,490][flwr][DEBUG] - Initialising: RayBackend
+[2024-10-13 19:53:18,491][flwr][DEBUG] - Backend config: {'client_resources': {'num_cpus': 8}, 'init_args': {'logging_level': 30, 'log_to_driver': True}, 'actor': {'tensorflow': 0}}
+[2024-10-13 19:53:20,122][flwr][INFO] - configure_fit: strategy sampled 2 clients (out of 10)
+[2024-10-13 19:53:22,516][flwr][DEBUG] - Constructed ActorPool with: 1 actors
+[2024-10-13 19:53:22,516][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 19:54:41,805][flwr][INFO] - aggregate_fit: received 2 results and 0 failures
+[2024-10-13 19:54:41,838][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-10-13 19:54:41,839][flwr][INFO] - configure_evaluate: strategy sampled 10 clients (out of 10)
+[2024-10-13 19:55:19,181][flwr][INFO] - aggregate_evaluate: received 10 results and 0 failures
+[2024-10-13 19:55:19,181][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-10-13 19:55:19,181][flwr][INFO] - 
+[2024-10-13 19:55:19,181][flwr][INFO] - [ROUND 2]
+[2024-10-13 19:55:19,182][flwr][INFO] - configure_fit: strategy sampled 5 clients (out of 10)
+[2024-10-13 19:57:59,300][flwr][DEBUG] - Terminated 0 actors

@@ -1,0 +1,28 @@
+[2024-10-13 20:03:12,828][flwr][DEBUG] - Pre-registering run with id 7290993432933009971
+[2024-10-13 20:03:12,829][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 20:03:12,829][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 20:03:12,829][flwr][DEBUG] - Buffer time delay: 5s
+[2024-10-13 20:03:13,425][flwr][ERROR] - ServerApp thread raised an exception: CustomStrategy.__init__() got an unexpected keyword argument 'fraction_evaluate'
+[2024-10-13 20:03:13,429][flwr][ERROR] - Traceback (most recent call last):
+  File "/Users/tobias/.pyenv/versions/3.10.13/lib/python3.10/site-packages/flwr/simulation/run_simulation.py", line 336, in server_th_with_start_checks
+    run_server_app(
+  File "/Users/tobias/.pyenv/versions/3.10.13/lib/python3.10/site-packages/flwr/server/run_serverapp.py", line 88, in run
+    server_app(driver=driver, context=context)
+  File "/Users/tobias/.pyenv/versions/3.10.13/lib/python3.10/site-packages/flwr/server/server_app.py", line 115, in __call__
+    components = self._server_fn(context)
+  File "/Users/tobias/unicamp/flower-simulation/test-transformers/test_transformers/server_app.py", line 80, in <lambda>
+    return ServerApp(server_fn=lambda context: server_fn(context, config))
+  File "/Users/tobias/unicamp/flower-simulation/test-transformers/test_transformers/server_app.py", line 70, in server_fn
+    strategy = CustomStrategy(
+TypeError: CustomStrategy.__init__() got an unexpected keyword argument 'fraction_evaluate'
+
+[2024-10-13 20:03:13,429][flwr][DEBUG] - ServerApp finished running.
+[2024-10-13 20:03:13,429][flwr][DEBUG] - Triggered stop event for Simulation Engine.
+[2024-10-13 20:03:17,840][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 20:03:17,841][flwr][DEBUG] - Registered 10 nodes
+[2024-10-13 20:03:17,841][flwr][DEBUG] - Supported backends: ['ray']
+[2024-10-13 20:03:17,842][flwr][DEBUG] - Initialising: RayBackend
+[2024-10-13 20:03:17,843][flwr][DEBUG] - Backend config: {'client_resources': {'num_cpus': 8}, 'init_args': {'logging_level': 30, 'log_to_driver': True}, 'actor': {'tensorflow': 0}}
+[2024-10-13 20:03:21,637][flwr][DEBUG] - Constructed ActorPool with: 1 actors
+[2024-10-13 20:03:21,638][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 20:03:21,638][flwr][DEBUG] - Terminated 1 actors

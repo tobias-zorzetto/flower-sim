@@ -1,0 +1,42 @@
+# Flower Simulation for calculating Carbon Cost
+
+#TODO
+
+# How to run
+
+install dependencies:
+
+```shell
+pip install -r requirements.txt
+```
+
+define the configurations for the run in the file `src/config.yaml`. Below an example can be seen of a configuration:
+
+```yaml
+
+model: prajjwal1/bert-tiny
+dataset: stanfordnlp/imdb
+backend_config:
+  client_resources:
+    num_cpus: 8
+gpu_backend_config:
+  client_resources: 
+    num_gpus: 1
+
+clients:
+  - cpu_time: 30
+  - cpu_time: 20
+  - cpu_time: 10
+
+partitions: 10
+```
+
+In the example above, the model and dataset are set. It is also defined the number of cpus to paralellize the simulation or, if available, the number ofgpus.
+In the end, the clients to be simulated are defined with their own metrics. More metrics can be added if needed. 
+It is also define the number of partitions to ddivide the dataset.
+
+**Finally, run the simulation:**
+
+```shell
+python src/simulation.py
+```

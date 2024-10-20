@@ -1,0 +1,24 @@
+[2024-10-13 20:13:08,417][flwr][DEBUG] - Pre-registering run with id 3686735947476223655
+[2024-10-13 20:13:08,417][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 20:13:08,417][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 20:13:08,417][flwr][DEBUG] - Buffer time delay: 5s
+[2024-10-13 20:13:09,112][flwr][INFO] - Starting Flower ServerApp, config: num_rounds=3, no round_timeout
+[2024-10-13 20:13:09,112][flwr][INFO] - 
+[2024-10-13 20:13:09,113][flwr][INFO] - [INIT]
+[2024-10-13 20:13:09,113][flwr][INFO] - Using initial global parameters provided by strategy
+[2024-10-13 20:13:09,113][flwr][INFO] - Starting evaluation of initial global parameters
+[2024-10-13 20:13:09,113][flwr][INFO] - Evaluation returned no results (`None`)
+[2024-10-13 20:13:09,113][flwr][INFO] - 
+[2024-10-13 20:13:09,113][flwr][INFO] - [ROUND 1]
+[2024-10-13 20:13:13,420][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 20:13:13,428][flwr][DEBUG] - Registered 10 nodes
+[2024-10-13 20:13:13,429][flwr][DEBUG] - Supported backends: ['ray']
+[2024-10-13 20:13:13,429][flwr][DEBUG] - Initialising: RayBackend
+[2024-10-13 20:13:13,430][flwr][DEBUG] - Backend config: {'client_resources': {'num_cpus': 8}, 'init_args': {'logging_level': 30, 'log_to_driver': True}, 'actor': {'tensorflow': 0}}
+[2024-10-13 20:13:15,122][flwr][INFO] - configure_fit: strategy sampled 2 clients (out of 10)
+[2024-10-13 20:13:17,151][flwr][DEBUG] - Constructed ActorPool with: 1 actors
+[2024-10-13 20:13:17,151][flwr][DEBUG] - Using InMemoryState
+[2024-10-13 20:14:35,461][flwr][INFO] - aggregate_fit: received 2 results and 0 failures
+[2024-10-13 20:14:35,485][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-10-13 20:14:35,486][flwr][INFO] - configure_evaluate: strategy sampled 10 clients (out of 10)
+[2024-10-13 20:14:47,003][flwr][DEBUG] - Terminated 0 actors
